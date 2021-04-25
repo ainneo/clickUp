@@ -1,3 +1,8 @@
+$mainTextColor: #212353;
+$secondaryTextColor: #4b5d68;
+$whiteTextColor: #ffffff;
+
+// nav wrapper
 .main-nav__wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -5,39 +10,46 @@
   padding: 40px 20px;
   max-width: 1600px;
   margin: 0 auto;
-  background: #fbfdff; }
+  background: $mainBackground;
+}
 
 /* logo  */
 .main-nav__logo {
   display: flex;
   justify-content: space-between;
   width: 49px;
-  align-items: flex-end; }
-  .main-nav__logo .main-nav__logo-circle {
+  align-items: flex-end;
+  .main-nav__logo-circle {
     width: 20px;
     height: 20px;
-    background: #9c69e2;
-    border-radius: 20px; }
-  .main-nav__logo .main-nav__logo-rectangle {
+    background: $purple;
+    border-radius: 20px;
+  }
+  .main-nav__logo-rectangle {
     width: 20px;
     height: 35px;
-    background: #f063b8;
-    border-radius: 20px; }
+    background: $pink;
+    border-radius: 20px;
+  }
+}
 
 /* list items */
 .main-nav__menu {
   width: 100%;
   padding-left: 40px;
   display: flex;
-  justify-content: space-between; }
-  .main-nav__menu .main-nav__menu-item {
+  justify-content: space-between;
+  .main-nav__menu-item {
     list-style-type: none;
     font-family: Avenir;
     size: 16px;
     font-weight: 500;
-    color: #4b5d68; }
-    .main-nav__menu .main-nav__menu-item:hover {
-      color: #212353; }
+    color: $secondaryTextColor;
+    &:hover {
+      color: $mainTextColor;
+    }
+  }
+}
 
 /* button */
 .main-nav__button {
@@ -50,25 +62,26 @@
   border: none;
   box-shadow: 0px 5px 5px #d3d3d3;
   border-radius: 50px;
-  background: #ffffff; }
+  background: $whiteTextColor;
+}
 
+// nav media queries - desktop
 @media screen and (min-width: 768px) {
   .main-nav__button {
     position: relative;
     top: 0px;
-    right: 0px; }
+    right: 0px;
+  }
   .main-nav__menu {
     padding-left: 0px;
     padding-right: 40px;
-    width: 45%; } }
+    width: 45%;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .main-nav__menu {
     padding-right: 60px;
-    width: 30%; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #fbfdff; }
+    width: 30%;
+  }
+}
