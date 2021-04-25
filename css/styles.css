@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  height: 50vh;
+  background: blue; }
+  header button {
+    background: black;
+    color: purple; }
+    header button:hover {
+      color: green; }
+
+.contact button {
+  background: black;
+  color: purple; }
