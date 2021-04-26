@@ -1,0 +1,62 @@
+.info-page {
+  .info-page__wrapper {
+    background: $pinkBackground;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 20px;
+    .info-page__image {
+      width: 100%;
+      height: 500px;
+      background: url("../assets/infoGirl.png") no-repeat center / cover;
+      background-size: contain;
+    }
+    .info-page__content {
+      width: 100%;
+    }
+  }
+}
+
+.info-page__content h1 {
+  background: $pinkBackground;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  padding-bottom: 40px;
+  color: $mainTextColor;
+}
+
+.info-page__content p {
+  background: $pinkBackground;
+  font-family: Avenir;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: $secondaryTextColor;
+}
+
+@media screen and (min-width: 768px) {
+  .info-page {
+    width: 100%;
+    display: flex;
+    padding: 100px 20px 100px;
+    align-items: center;
+    justify-content: center;
+    .info-page__wrapper {
+      height: 520px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .info-page__image {
+        width: 48%;
+      }
+      .info-page__content {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
