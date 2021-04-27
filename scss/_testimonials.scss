@@ -4,11 +4,6 @@ $pink: #f063b8;
 $seaGreen: #68c9ba;
 $mainBackground: #fbfdff;
 
-//text color variables
-$mainTextColor: #212353;
-$secondaryTextColor: #4b5d68;
-$whiteTextColor: #ffffff;
-
 .test-pg {
   .test-pg__wrapper {
     max-width: 1200px;
@@ -16,6 +11,7 @@ $whiteTextColor: #ffffff;
     background: $purple;
     border-radius: 50px;
     height: 709px;
+    overflow: hidden;
     .test-pg__relative {
       position: relative;
       .test-pg__header {
@@ -35,12 +31,25 @@ $whiteTextColor: #ffffff;
   width: 100%;
   border-radius: 50px;
   height: 709px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 81%, #9c69e2 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 60%, #9c69e2 100%);
 }
 
 .test-pg__card {
   position: absolute;
   left: 80px;
+  top: 250px;
+  background: $mainBackground;
+  border-radius: 20px;
+  max-width: 600px;
+  height: 330px;
+  color: $mainTextColor;
+  text-align: center;
+  padding: 30px;
+}
+
+.test-pg__card-two {
+  position: absolute;
+  left: 800px;
   top: 250px;
   background: $mainBackground;
   border-radius: 20px;
