@@ -10,6 +10,7 @@ nav {
   align-items: center;
   padding: 40px 20px;
   max-width: 1200px;
+  margin: 0 auto;
   background: #fbfdff; }
 
 .main-nav__logo {
@@ -324,7 +325,8 @@ a {
   .features-pg__wrapper {
     margin: 0 auto;
     max-width: 1200px;
-    display: flex; } }
+    display: flex;
+    flex-direction: column; } }
 
 @media screen and (min-width: 400px) {
   .features-pg__wrapper .features-pg__img .features-pg__item {
@@ -359,6 +361,8 @@ a {
     padding-top: 40px; } }
 
 @media screen and (min-width: 600px) {
+  .features-pg__wrapper {
+    padding-left: 70px; }
   .features-pg__wrapper .features-pg__img {
     height: 360px; }
   .features-pg__wrapper .features-pg__img-two {
@@ -390,27 +394,33 @@ a {
     font-size: 16px;
     line-height: 26px; } }
 
+@media screen and (min-width: 900px) {
+  .features-pg__wrapper {
+    flex-direction: row;
+    padding-left: 0; } }
+
 .test-pg .test-pg__wrapper {
-  height: 200px;
   max-width: 1200px;
   margin: 0 auto;
   background: #9c69e2;
   border-radius: 50px;
   height: 709px; }
-  .test-pg .test-pg__wrapper .test-pg__absolute {
+  .test-pg .test-pg__wrapper .test-pg__relative {
     position: relative; }
-    .test-pg .test-pg__wrapper .test-pg__absolute .test-pg__header {
+    .test-pg .test-pg__wrapper .test-pg__relative .test-pg__header {
       position: absolute;
       left: 80px;
       top: 109px; }
 
-.test-pg__header h2 {
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 130%;
-  background: #9c69e2;
-  color: #ffffff; }
+.test-pg__relative:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50px;
+  height: 709px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 81%, #9c69e2 100%); }
 
 .test-pg__card {
   position: absolute;
@@ -419,10 +429,18 @@ a {
   background: #fbfdff;
   border-radius: 20px;
   max-width: 600px;
-  height: 330px; }
+  height: 330px;
+  color: #212353;
+  text-align: center;
+  padding: 30px; }
 
-image {
-  height: 200px; }
+.test-pg__header h2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  background: #9c69e2;
+  color: #ffffff; }
 
 .test-pg__card-col h5 {
   font-family: Avenir;
@@ -435,7 +453,23 @@ image {
   font-weight: 500;
   font-size: 14px;
   line-height: 160%;
-  letter-spacing: 0.01em; }
+  letter-spacing: 0.01em;
+  color: #9c69e2; }
+
+.test-pg__card-col p {
+  font-family: Avenir;
+  font-size: 18px;
+  color: #4b5d68;
+  padding-top: 10px; }
+
+@media screen and (min-width: 600px) {
+  .test-pg__card-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    text-align: left; }
+  .test-pg__card-col {
+    padding: 30px; } }
 
 * {
   margin: 0;

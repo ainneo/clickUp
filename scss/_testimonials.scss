@@ -9,59 +9,88 @@ $mainTextColor: #212353;
 $secondaryTextColor: #4b5d68;
 $whiteTextColor: #ffffff;
 
-
-.test-pg{
-    .test-pg__wrapper{
-        height: 200px;
-        max-width: 1200px;
-        margin: 0 auto;
-        background: $purple;
-        border-radius: 50px;
-        height: 709px;
-        .test-pg__absolute{
-            position: relative;
-              .test-pg__header{
-                position: absolute;
-                left: 80px;
-                top: 109px; 
-           }
-        }
-    }
-}
-
-.test-pg__header h2{
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 130%;
+.test-pg {
+  .test-pg__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     background: $purple;
-    color: $whiteTextColor;
+    border-radius: 50px;
+    height: 709px;
+    .test-pg__relative {
+      position: relative;
+      .test-pg__header {
+        position: absolute;
+        left: 80px;
+        top: 109px;
+      }
+    }
+  }
 }
 
-.test-pg__card{
-    position: absolute;
-    left: 80px;
-    top: 250px;
-    background: $mainBackground;
-    border-radius: 20px;
-    max-width: 600px;
-    height: 330px;
+.test-pg__relative:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50px;
+  height: 709px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 81%, #9c69e2 100%);
 }
-image{
-    height: 200px
+
+.test-pg__card {
+  position: absolute;
+  left: 80px;
+  top: 250px;
+  background: $mainBackground;
+  border-radius: 20px;
+  max-width: 600px;
+  height: 330px;
+  color: $mainTextColor;
+  text-align: center;
+  padding: 30px;
+}
+
+.test-pg__header h2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  background: $purple;
+  color: $whiteTextColor;
 }
 
 .test-pg__card-col h5 {
-    font-family: Avenir;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 160%;
-    }
-    
-    .test-pg__card-col h6 {
-    font-family: Avenir;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0.01em;
-    }
+  font-family: Avenir;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.test-pg__card-col h6 {
+  font-family: Avenir;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: $purple;
+}
+
+.test-pg__card-col p {
+  font-family: Avenir;
+  font-size: 18px;
+  color: $secondaryTextColor;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .test-pg__card-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    text-align: left;
+  }
+  .test-pg__card-col {
+    padding: 30px;
+  }
+}

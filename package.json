@@ -12,7 +12,7 @@
     "browser-sync": "^2.26.14"
   },
   "scripts": {
-    "start": "npm run",
+    "start": "npm run"
   },
   "author": "Ainne Oum",
   "license": "ISC"

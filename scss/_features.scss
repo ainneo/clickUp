@@ -130,6 +130,8 @@
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
+    flex-direction: column;
+  
   }
 }
 
@@ -182,6 +184,9 @@
 }
 
 @media screen and (min-width: 600px) {
+  .features-pg__wrapper{
+    padding-left: 70px
+  }
   .features-pg__wrapper .features-pg__img {
     height: 360px;
   }
@@ -222,4 +227,11 @@
     font-size: 16px;
     line-height: 26px;
   }
+}
+
+@media screen and (min-width: 900px) {
+.features-pg__wrapper {
+  flex-direction: row;
+  padding-left: 0
+ }
 }
