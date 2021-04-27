@@ -1,0 +1,67 @@
+//color variables
+$purple: #9c69e2;
+$pink: #f063b8;
+$seaGreen: #68c9ba;
+$mainBackground: #fbfdff;
+
+//text color variables
+$mainTextColor: #212353;
+$secondaryTextColor: #4b5d68;
+$whiteTextColor: #ffffff;
+
+
+.test-pg{
+    .test-pg__wrapper{
+        height: 200px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: $purple;
+        border-radius: 50px;
+        height: 709px;
+        .test-pg__absolute{
+            position: relative;
+              .test-pg__header{
+                position: absolute;
+                left: 80px;
+                top: 109px; 
+           }
+        }
+    }
+}
+
+.test-pg__header h2{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    background: $purple;
+    color: $whiteTextColor;
+}
+
+.test-pg__card{
+    position: absolute;
+    left: 80px;
+    top: 250px;
+    background: $mainBackground;
+    border-radius: 20px;
+    max-width: 600px;
+    height: 330px;
+}
+image{
+    height: 200px
+}
+
+.test-pg__card-col h5 {
+    font-family: Avenir;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    }
+    
+    .test-pg__card-col h6 {
+    font-family: Avenir;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    }
