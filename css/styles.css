@@ -38,10 +38,13 @@ nav {
     list-style-type: none;
     font-family: Avenir;
     font-size: 16px;
-    font-weight: 500;
-    color: #4b5d68; }
-    .main-nav__menu .main-nav__menu-item:hover {
-      color: #212353; }
+    font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: #4b5d68; }
+  a:hover {
+    color: #212353; }
 
 .main-nav__button {
   position: absolute;
@@ -309,7 +312,8 @@ nav {
   font-family: Avenir;
   font-weight: 900;
   font-size: 16px;
-  text-align: left; }
+  text-align: left;
+  color: #212353; }
 
 @media screen and (min-width: 768px) {
   .features-pg {
