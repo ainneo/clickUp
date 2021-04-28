@@ -506,15 +506,12 @@ a {
   .test-pg__card-col {
     padding: 30px; } }
 
+.footer {
+  padding: 100px 20px 100px; }
+
 .footer-header {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px; }
-  .footer-header .footer-header__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap; }
+  margin: 0 auto; }
 
 .footer-header__text h1 {
   font-family: Helvetica;
@@ -559,6 +556,71 @@ a {
   box-shadow: 0px 5px 5px #d3d3d3;
   border-radius: 50px;
   background: #ffffff; }
+
+.footer-info {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .footer-info .footer-info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap; }
+
+.footer-info__logo-text {
+  font-family: Avenir;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 160%; }
+
+.footer-info__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  color: #212353; }
+
+.footer-info__wrapper-address h6 {
+  padding-top: 60px;
+  font-family: Avenir;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: #212353; }
+
+.footer-info__wrapper-email p {
+  padding-top: 10px;
+  font-family: Avenir;
+  font-size: 16px;
+  line-height: 180%;
+  color: #212353; }
+
+.footer-info__about p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+  padding-bottom: 30px; }
+
+.footer-info__about a {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 250%;
+  color: #212353; }
+
+.footer-info__social-dots .dot {
+  margin-top: 30px;
+  margin-right: 5px;
+  height: 50px;
+  width: 50px;
+  background: #212353;
+  opacity: 0.1;
+  border-radius: 50%;
+  display: inline-block; }
 
 * {
   margin: 0;
