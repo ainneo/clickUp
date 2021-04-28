@@ -447,6 +447,19 @@ a {
   text-align: center;
   padding: 30px; }
 
+.test-pg__arrows {
+  position: absolute;
+  top: 600px;
+  width: 100%;
+  padding: 20px 100px; }
+  .test-pg__arrows .test-pg__arrows-grow {
+    display: flex;
+    justify-content: flex-end; }
+    .test-pg__arrows .test-pg__arrows-grow .test-pg__arrows-row {
+      display: flex;
+      justify-content: space-between;
+      width: 80px; }
+
 .test-pg__header h2 {
   font-family: Helvetica;
   font-weight: bold;
@@ -487,5 +500,4 @@ a {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background: #fbfdff; }
+  box-sizing: border-box; }

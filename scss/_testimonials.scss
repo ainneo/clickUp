@@ -60,6 +60,23 @@ $mainBackground: #fbfdff;
   padding: 30px;
 }
 
+.test-pg__arrows {
+  position: absolute;
+  top: 600px;
+  width: 100%;
+  padding: 20px 100px;
+  // max-width: 1000px;
+  .test-pg__arrows-grow {
+    display: flex;
+    justify-content: flex-end;
+    .test-pg__arrows-row {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+    }
+  }
+}
+
 .test-pg__header h2 {
   font-family: Helvetica;
   font-weight: bold;
