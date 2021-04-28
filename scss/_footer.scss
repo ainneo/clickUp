@@ -1,0 +1,74 @@
+$purple: #9c69e2;
+$pink: #f063b8;
+$seaGreen: #68c9ba;
+$mainBackground: #fbfdff;
+
+//text color variables
+$mainTextColor: #212353;
+$secondaryTextColor: #4b5d68;
+$whiteTextColor: #ffffff;
+
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+
+// .footer {
+// }
+.footer-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  .footer-header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-header__text h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: $mainTextColor;
+}
+
+.footer-header__text p {
+  padding-top: 20px;
+  font-family: Avenir;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: $secondaryTextColor;
+}
+
+.footer-header__buttons .footer-header__btn {
+  border: none;
+  width: 170px;
+  height: 60px;
+  background: $pink;
+  border-radius: 50px;
+  margin-top: 70px;
+  color: $whiteTextColor;
+}
+.footer-header__buttons .footer-header__link {
+  font-family: Avenir;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  background: $pink;
+  color: $whiteTextColor;
+  text-decoration: none;
+}
+.footer-header__buttons .footer-header__button {
+  margin-left: 30px;
+  cursor: pointer;
+  width: 210px;
+  height: 60px;
+  border: none;
+  box-shadow: 0px 5px 5px #d3d3d3;
+  border-radius: 50px;
+  background: $whiteTextColor;
+}
