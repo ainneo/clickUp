@@ -6,10 +6,10 @@
   max-width: 1200px;
   margin: 0 auto;
   .footer-header__row {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   align-items: baseline;
-    //   flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 
@@ -70,6 +70,14 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
+}
+
+.footer-info__wrapper {
+  padding: 60px;
+}
+
+.footer-info__wrapper {
+  padding: 30px;
 }
 
 .footer-info__logo-text {
