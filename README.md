@@ -22,6 +22,6 @@ I created this project for ClickUp. This project was built using, BEM, HTML, CSS
 </section>
 ```
 ## Gulp & SASS Set Up:
-https://www.youtube.com/watch?v=q0E1hbcj-NI
-https://codeburst.io/quick-setup-for-gulp-4-browsersync-sass-coder-coder-3240dda62e4f
-To start dev run: ```gulp watch``` or ```gulp run``` depending on your setup.
+- https://www.youtube.com/watch?v=q0E1hbcj-NI
+- https://codeburst.io/quick-setup-for-gulp-4-browsersync-sass-coder-coder-3240dda62e4f
+- To start dev run: ```gulp watch``` or ```gulp run``` depending on your setup.
